@@ -32,7 +32,8 @@ try:
             wandb = None
 except (ImportError, AssertionError):
     wandb = None
-
+# 添加以下语句
+wandb = None
 
 class Loggers():
     #  Loggers class
