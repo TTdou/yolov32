@@ -25,8 +25,7 @@ try:
     assert hasattr(wandb, '__version__')  # verify package import not local dir
 except (ImportError, AssertionError):
     wandb = None
-# 下面新加
-wandb = None
+
 RANK = int(os.getenv('RANK', -1))
 WANDB_ARTIFACT_PREFIX = 'wandb-artifact://'
 
